@@ -1,0 +1,707 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    :root {
+        --color1: #f4cc34;
+        --color2: #fcdc54;
+        --color3: #442c04;
+        --color4: #75a15d;
+        --color5: #b4bd88;
+        --color6: #f3cc34;
+        --color7: #f4d449;
+        --color8: #145b8c;
+        --color9: #6eac52;
+        --color10: #907608;
+    
+    }
+}
+
+/*
+@media (min-width:480px);
+@media (min-width:480px);
+@media (min-width:768px);
+@media (min-width:1024px);
+*/
+
+
+@media (min-width:768px) {
+/*---------COMIENZO DEL HEADER--------*/
+header {
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header .navbar-header {
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: left;
+    
+  }
+  
+  .logo img {
+    max-height: 60px;
+    max-width: 200px;
+  }
+
+  header .navbar-header ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header .navbar-header ul li {
+    padding: 10px;
+    margin: 0px 20px;
+  }
+  
+  header .navbar-header ul li a {
+    color: #145b8c;
+    text-decoration: none;
+  }
+  
+  header .navbar-header ul li a:hover {
+    text-decoration: none;
+    box-shadow: 0px 2px #145b8c;
+  }
+  
+  .mySidebar1 {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    display: none;
+    z-index: -1;
+  }
+  
+  /* The sidebar links */
+  .mySidebar1 #links-hero {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: none;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .mySidebar1 #links-hero:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #75a15d;
+    color: #fcdc54;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .openbtn:hover {
+    display: none;
+    background-color: #b4bd88;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    padding-top: 30px;
+    position: absolute;
+    z-index: -1;
+    width: 87vw;
+    display: none;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media (max-height: 450px) {
+    .sidebar {padding-top: 0px;}
+    .sidebar a {font-size: 0px;}
+  }
+  
+  
+  /*---------FIN DEL HEADER--------*/
+
+/*--------COMIENZO DEL HERO-------*/
+
+.hero {
+    box-shadow: 0px 4px 8px 2px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    background-image: linear-gradient(90deg, rgba( 117, 161, 93, 0.8) 0%, rgba(116,160,90, 0) 100%), url(./Assets/maquinaria2.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+#hero {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+    padding: 20px;
+}
+
+#hero-text h1 {
+    font-size: 4em;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+#hero-text p {
+    max-width: 60vw;
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.hero-productos {
+    padding: 40px;
+}
+
+#hero-rpoductos-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-rpoductos-text h1 {
+  font-weight: 300;
+  font-style: oblique;
+  color: #145b8c;
+  box-shadow: 0px 2px #145b8c;
+  font-size: 2em;
+}
+
+#productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 28vh;
+}
+
+#nuevos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba( 0, 0, 0, 0.8) 0%, rgba(116,160,90, 0) 100%), url(./Assets/nuevos.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+}
+
+#usados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba( 0, 0, 0, 0.8) 0%, rgba(116,160,90, 0) 100%), url(./Assets/usados.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+}
+
+#repuestos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba( 0, 0, 0, 0.8) 0%, rgba(116,160,90, 0) 100%), url(./Assets/repuestos.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+}
+
+#repuestos:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+#usados:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+#nuevos:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+
+.section-about-hero {
+  padding: 55px;
+}
+
+#about-text h1 {
+  font-size: 2em;
+  color: black;
+  text-shadow: 2px 2px whitesmoke;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+#about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ghostwhite;
+  border-radius: 10px;
+  padding: 40px;
+  height: 50vh;
+  width: 90%;
+}
+
+#about-hero-img {
+  height: 50vh;
+  width: 40%;
+}
+
+#about-img {
+  background-image: url(./Assets/aboutimg.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+/*---------COMIENZO DEL HEADER--------*/
+header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+header .navbar-header {
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  
+}
+
+.logo img {
+  max-height: 60px;
+  max-width: 200px;
+}
+
+.navbar-header ul {
+  display: none;
+  z-index: -1;
+}
+
+/* The sidepanel menu */
+.mySidebar1 {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: whitesmoke; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.mySidebar1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #145b8c;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.mySidebar1 a:hover {
+  color: #75a15d;
+}
+
+/* Position and style the close button (top right corner) */
+.mySidebar1 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #145b8c;
+  padding: 10px 15px;
+  border: none;
+}
+
+/*---------FIN DEL HEADER--------*/
+/*--------COMIENZO DEL HERO-------*/
+
+.hero {
+    box-shadow: 0px 4px 8px 2px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    background-image: linear-gradient(90deg, rgba( 117, 161, 93, 1) 0%, rgba(116,160,90, 0) 100%), url(./Assets/maquinaria2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100vw;
+}
+
+#hero {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+    padding: 20px;
+}
+
+#hero-text h1 {
+    font-size: 2em;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+#hero-text p {
+    max-width: 80vw;
+    font-size: 0.8em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.hero-productos {
+    padding: 40px;
+}
+#hero-rpoductos-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-rpoductos-text h1 {
+  font-weight: 300;
+  font-style: oblique;
+  color: #145b8c;
+  box-shadow: 0px 2px #145b8c;
+  font-size: 1.4em;
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#nuevos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Assets/nuevos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150%;
+  width: 100%;
+  margin: 15px;
+}
+
+#usados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Assets/usados.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150%;
+  width: 100%;
+  margin: 15px;
+}
+
+#repuestos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Assets/repuestos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150%;
+  width: 100%;
+  margin: 15px;
+}
+#repuestos:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+#usados:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+#nuevos:hover {
+    box-shadow: 0px 0px 10px 2px;
+}
+}
+
+
+
