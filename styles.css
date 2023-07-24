@@ -282,15 +282,31 @@ header {
 }
 
 .section-about-hero {
+  display: flex;
+  flex-direction: column;
   padding: 55px;
+  margin: 10px;
 }
 
+#section-about-hero {
+  display: flex;
+  justify-content: center;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: -200px;
+  max-width: 400px;
+}
+
+
 #about-text h1 {
-  font-size: 2em;
+  font-size: 3em;
   color: black;
-  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 1px 1px #75a15d;
   font-weight: bold;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 #about-hero {
@@ -301,7 +317,7 @@ header {
   border-radius: 10px;
   padding: 40px;
   height: 50vh;
-  width: 90%;
+  width: 100%;
 }
 
 #about-hero-img {
